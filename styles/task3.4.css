@@ -1,0 +1,13 @@
+.task3-4 p:first-child {
+    font-family: monospace;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+.task3-4 p:last-child {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+}

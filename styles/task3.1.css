@@ -1,0 +1,9 @@
+.task3-1 p {
+    margin-bottom: 1.5rem;
+}
+
+.task3-1 hr {
+    margin: 2rem 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}

@@ -1,0 +1,116 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header стили */
+.header {
+    background-color: green;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Навигация */
+nav {
+    background-color: red;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul > li {
+    margin: 0 1rem;
+}
+
+nav ul > li:first-child {
+    margin-left: 0;
+}
+
+nav ul > li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Основной контент */
+.content {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.content h2 {
+    margin-bottom: 1rem;
+    color: green;
+}
+
+.content p {
+    margin-bottom: 1rem;
+}
+
+.content ul {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul > li {
+        margin: 0.25rem 0;
+    }
+    
+    .content {
+        padding: 1rem;
+    }
+}
